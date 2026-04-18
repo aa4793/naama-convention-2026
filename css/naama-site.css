@@ -114,10 +114,13 @@ section { padding: 5rem 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 100px;
   gap: 1rem;
+  max-width: 100%;
+  padding: 0 2rem;
 }
-.nav__logo img { height: 44px; width: auto; }
+.nav__logo { flex-shrink: 0; }
+.nav__logo img { height: 80px; width: auto; }
 
 .nav__links {
   display: flex;
@@ -795,7 +798,7 @@ section { padding: 5rem 0; }
   padding-bottom: 2.5rem;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
-.footer__brand img { height: 42px; margin-bottom: 1rem; }
+.footer__brand img { height: 80px; margin-bottom: 1rem; }
 .footer__brand p   { font-size: .82rem; line-height: 1.7; max-width: 280px; }
 
 .footer__col h4 {
