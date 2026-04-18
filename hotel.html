@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convention Hotel – NAAMA 48th National Medical Convention 2026</title>
+  <link rel="stylesheet" href="css/naama-site.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/New2025-WH-NAAMA-Full-logo-corrected-500x188-1.png" alt="NAAMA Logo" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="submissions.html">Call for Submissions</a></li>
+        <li><a href="hotel.html" class="active">Convention Hotel</a></li>
+      </ul>
+      <div class="nav__register">
+        <span class="btn btn-disabled">Registration Coming Soon</span>
+      </div>
+      <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="submissions.html">Call for Submissions</a>
+      <a href="hotel.html">Convention Hotel</a>
+      <span class="btn btn-disabled">Registration Coming Soon</span>
+    </div>
+  </nav>
+
+  <!-- ── Hotel Hero ── -->
+  <div class="hotel-hero">
+    <div class="container">
+      <p class="hero__eyebrow" style="margin-bottom:.75rem;">Convention Hotel</p>
+      <h1 style="color:var(--white);font-size:2.2rem;">The Westin Oaks Houston<br>at the Galleria</h1>
+      <p>5011 Westheimer at Post Oak &middot; Houston, TX 77056</p>
+    </div>
+  </div>
+
+  <!-- ── Overview ── -->
+  <section>
+    <div class="container">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+
+        <div>
+          <h2 style="color:var(--navy);">Your Home Base<br>for the Convention</h2>
+          <div class="divider divider-left"></div>
+          <p style="color:var(--gray);margin-bottom:1rem;">
+            We've partnered with <strong>The Westin Oaks Houston at the Galleria</strong>, a newly
+            renovated AAA Four Diamond property situated in Houston's vibrant Uptown district. It's
+            the ideal base for an exceptional convention experience — combining world-class comfort
+            with unbeatable location.
+          </p>
+          <p style="color:var(--gray);margin-bottom:1.75rem;">
+            Located just <strong>6–8 miles from Baylor College of Medicine</strong> (approximately
+            10–15 minutes by car), the hotel puts you steps away from Houston's finest dining,
+            shopping, and entertainment.
+          </p>
+          <a href="https://share.google/DfsAkr2ILIaCkCmXB" target="_blank" rel="noopener" class="btn btn-primary">Book Your Room</a>
+        </div>
+
+        <div>
+          <div style="background:var(--light);border-radius:var(--radius);padding:2rem;">
+            <h4 style="color:var(--navy);margin-bottom:1.25rem;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;">At a Glance</h4>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.85rem;">
+              <li style="font-size:.88rem;color:var(--gray);padding-left:.75rem;border-left:2px solid var(--teal);">
+                <strong style="color:var(--black);">AAA Four Diamond</strong> — award-winning property
+              </li>
+              <li style="font-size:.88rem;color:var(--gray);padding-left:.75rem;border-left:2px solid var(--teal);">
+                <strong style="color:var(--black);">406 renovated guest rooms</strong> including executive and luxury suites
+              </li>
+              <li style="font-size:.88rem;color:var(--gray);padding-left:.75rem;border-left:2px solid var(--teal);">
+                <strong style="color:var(--black);">Galleria-connected</strong> — directly attached to Houston's premier mall (400+ stores)
+              </li>
+              <li style="font-size:.88rem;color:var(--gray);padding-left:.75rem;border-left:2px solid var(--teal);">
+                <strong style="color:var(--black);">~10–15 min</strong> from Baylor College of Medicine / Texas Medical Center
+              </li>
+              <li style="font-size:.88rem;color:var(--gray);padding-left:.75rem;border-left:2px solid var(--teal);">
+                <strong style="color:var(--black);">Newly renovated</strong> — rooms, suites, restaurant, and public spaces all freshly updated
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/New2025-WH-NAAMA-Full-logo-corrected-500x188-1.png" alt="NAAMA Logo" />
+          <p>National Arab American Medical Association<br>2265 Livernois Road, Suite 720<br>Troy, MI 48083 USA</p>
+        </div>
+        <div class="footer__col">
+          <h4>Convention</h4>
+          <a href="index.html">Home</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="submissions.html">Call for Submissions</a>
+          <a href="hotel.html">Convention Hotel</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="tel:2486463661">(248) 646-3661</a>
+          <a href="mailto:naama@naama.com">naama@naama.com</a>
+          <a href="https://www.naama.com" target="_blank" rel="noopener">www.naama.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 NAAMA. All rights reserved.</span>
+        <span>48th National Medical Convention &middot; Houston, Texas</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

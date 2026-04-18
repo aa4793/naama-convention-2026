@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAAMA 48th National Medical Convention 2026</title>
+  <link rel="stylesheet" href="css/naama-site.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/New2025-WH-NAAMA-Full-logo-corrected-500x188-1.png" alt="NAAMA Logo" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="submissions.html">Call for Submissions</a></li>
+        <li><a href="hotel.html">Convention Hotel</a></li>
+      </ul>
+      <div class="nav__register">
+        <span class="btn btn-disabled">Registration Coming Soon</span>
+      </div>
+      <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="submissions.html">Call for Submissions</a>
+      <a href="hotel.html">Convention Hotel</a>
+      <span class="btn btn-disabled">Registration Coming Soon</span>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero__eyebrow">National Arab American Medical Association</p>
+      <h1>48th National Medical<br><span>Convention 2026</span></h1>
+      <div class="hero__meta">
+        <span>September 4–6, 2026</span>
+        <span class="sep">·</span>
+        <span>Baylor College of Medicine</span>
+        <span class="sep">·</span>
+        <span>Houston, Texas</span>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown">
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cd-days">--</span>
+          <span class="countdown__label">Days</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cd-hours">--</span>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cd-minutes">--</span>
+          <span class="countdown__label">Minutes</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__number" id="cd-seconds">--</span>
+          <span class="countdown__label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Strip: About ── -->
+  <div class="strip">
+    <div class="container">
+      <div class="strip__inner">
+        <div class="strip__heading">
+          <div class="strip__label">About the Convention</div>
+          <div class="strip__title">Arab American Health, Front and Center</div>
+        </div>
+        <div class="strip__body">
+          <p>
+            The National Arab American Medical Association's 48th annual convention convenes
+            clinicians, trainees, researchers, and community leaders to share knowledge, foster
+            collaboration, and advance health equity. This year's program focuses on Arab American
+            health across clinical care, public health, research, policy, and community engagement —
+            over Labor Day weekend in Houston, Texas.
+          </p>
+          <a href="agenda.html" class="btn btn-navy">View Agenda</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Strip: Submissions ── -->
+  <div class="strip strip--alt">
+    <div class="container">
+      <div class="strip__inner">
+        <div class="strip__heading">
+          <div class="strip__label">Call for Submissions</div>
+          <div class="strip__title">Submit Your Research or Artwork</div>
+        </div>
+        <div class="strip__body">
+          <p>
+            We welcome scientific abstracts, poster presentations, and — for the first time —
+            literary and artistic contributions. Open to clinicians, researchers, trainees,
+            students, and community partners.
+          </p>
+          <p style="margin-top:.75rem;margin-bottom:1.5rem;"><strong>Deadline: June 15, 2026.</strong></p>
+          <a href="submissions.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Strip: Hotel ── -->
+  <div class="strip">
+    <div class="container">
+      <div class="strip__inner">
+        <div class="strip__heading">
+          <div class="strip__label">Convention Hotel</div>
+          <div class="strip__title">The Westin Oaks Houston at the Galleria</div>
+        </div>
+        <div class="strip__body">
+          <p>
+            Stay at our newly renovated, AAA Four Diamond convention hotel — directly connected
+            to Houston's premier shopping destination and just minutes from Baylor College of
+            Medicine. Book early to secure the convention rate.
+          </p>
+          <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+            <a href="https://share.google/DfsAkr2ILIaCkCmXB" target="_blank" rel="noopener" class="btn btn-primary">Book Your Room</a>
+            <a href="hotel.html" class="btn btn-outline">Hotel Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/New2025-WH-NAAMA-Full-logo-corrected-500x188-1.png" alt="NAAMA Logo" />
+          <p>National Arab American Medical Association<br>2265 Livernois Road, Suite 720<br>Troy, MI 48083 USA</p>
+        </div>
+        <div class="footer__col">
+          <h4>Convention</h4>
+          <a href="index.html">Home</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="submissions.html">Call for Submissions</a>
+          <a href="hotel.html">Convention Hotel</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="tel:2486463661">(248) 646-3661</a>
+          <a href="mailto:naama@naama.com">naama@naama.com</a>
+          <a href="https://www.naama.com" target="_blank" rel="noopener">www.naama.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 NAAMA. All rights reserved.</span>
+        <span>48th National Medical Convention &middot; Houston, Texas</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+
+    // Countdown to September 4, 2026 at 8:00 AM
+    function updateCountdown() {
+      const target = new Date('2026-09-04T08:00:00').getTime();
+      const now    = new Date().getTime();
+      const diff   = target - now;
+
+      if (diff <= 0) {
+        ['cd-days','cd-hours','cd-minutes','cd-seconds'].forEach(id =>
+          document.getElementById(id).textContent = '00'
+        );
+        return;
+      }
+
+      const pad = n => String(n).padStart(2, '0');
+      document.getElementById('cd-days').textContent    = pad(Math.floor(diff / 86400000));
+      document.getElementById('cd-hours').textContent   = pad(Math.floor((diff % 86400000) / 3600000));
+      document.getElementById('cd-minutes').textContent = pad(Math.floor((diff % 3600000) / 60000));
+      document.getElementById('cd-seconds').textContent = pad(Math.floor((diff % 60000) / 1000));
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
