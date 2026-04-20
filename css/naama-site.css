@@ -196,9 +196,9 @@ section { padding: 5rem 0; }
   position: absolute; inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10, 18, 40, 0.72) 0%,
-    rgba(15, 28, 60, 0.80) 50%,
-    rgba(10, 18, 40, 0.88) 100%
+    rgba(10, 18, 40, 0.52) 0%,
+    rgba(15, 28, 60, 0.62) 50%,
+    rgba(10, 18, 40, 0.72) 100%
   );
   pointer-events: none;
 }
@@ -423,6 +423,67 @@ section { padding: 5rem 0; }
   font-weight: 500;
 }
 
+/* ── Speaker Bio Hover Card ── */
+.speaker-card {
+  position: relative;
+}
+.speaker-bio {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,.3);
+  z-index: 50;
+  pointer-events: none;
+}
+.speaker-bio::after {
+  content: '';
+  position: absolute;
+  top: 100%; left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--navy);
+}
+.speaker-bio__name {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: .5rem;
+}
+.speaker-bio__text {
+  font-size: .75rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,.85);
+}
+.speaker-card:hover .speaker-bio,
+.speaker-card.bio-open .speaker-bio {
+  display: block;
+}
+/* keep bio on screen near edges */
+@media (max-width: 600px) {
+  .speaker-bio {
+    left: 0; transform: none;
+    width: 230px;
+  }
+  .speaker-bio::after { left: 48px; }
+}
+
+/* ── Session summary line ── */
+.agenda-session__summary {
+  font-size: .78rem;
+  color: var(--gray);
+  font-style: italic;
+  padding: .5rem 1.25rem .6rem;
+  border-bottom: 1px solid #f0f4f8;
+  background: var(--white);
+}
+
 /* ========================================
    AGENDA PAGE
    ======================================== */
@@ -619,14 +680,14 @@ section { padding: 5rem 0; }
 .track:hover .track__header-bg { transform: scale(1.04); }
 .track__header-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(10,18,40,.85) 0%, rgba(10,18,40,.35) 100%);
+  background: linear-gradient(to top, rgba(10,18,40,.70) 0%, rgba(10,18,40,.22) 100%);
 }
 .track__header-text {
   position: relative; z-index: 1;
   padding: 1.5rem;
 }
 .track--science .track__header-bg { background-image: url('../images/research.jpg'); }
-.track--art     .track__header-bg { background-image: url('../images/art.jpg'); }
+.track--art     .track__header-bg { background-image: url('../images/arabic_art.jpg'); }
 
 .track__header h3 { color: var(--white); margin-bottom: .25rem; font-size: 1.2rem; }
 .track__header p  { color: rgba(255,255,255,.8); font-size: .85rem; margin: 0; }
@@ -777,7 +838,7 @@ section { padding: 5rem 0; }
 }
 .page-hero__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, rgba(10,18,40,.65) 0%, rgba(10,18,40,.80) 100%);
+  background: linear-gradient(to bottom, rgba(10,18,40,.45) 0%, rgba(10,18,40,.62) 100%);
 }
 .page-hero > .container { position: relative; z-index: 1; }
 .page-hero h1 { color: var(--white); font-size: 2.2rem; text-shadow: 0 2px 16px rgba(0,0,0,.5); }
