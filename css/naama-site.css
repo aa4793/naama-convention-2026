@@ -1255,3 +1255,26 @@ section { padding: 5rem 0; }
   .deadline-banner__dates { flex-direction: column; gap: .75rem; }
   .deadline-sep { display: none; }
 }
+
+/* ── NextGen track topic list ── */
+.nextgen-topics {
+  list-style: none;
+  margin-top: .35rem;
+}
+.nextgen-topics li {
+  font-size: .69rem;
+  color: var(--gray);
+  padding: .18rem 0 .18rem .85rem;
+  position: relative;
+  line-height: 1.4;
+}
+.nextgen-topics li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .52rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--teal);
+}
