@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aa4793.github.io/naama-convention-2026/sitemap.xml
