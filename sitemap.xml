@@ -6,6 +6,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://aa4793.github.io/naama-convention-2026/tours.html</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://aa4793.github.io/naama-convention-2026/agenda.html</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>

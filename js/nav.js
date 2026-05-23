@@ -7,6 +7,7 @@
   var links = [
     { href: 'index.html',       label: 'Home' },
     { href: 'agenda.html',      label: 'Program' },
+    { href: 'tours.html',       label: 'Tours & Events' },
     { href: 'submissions.html', label: 'Call for Submissions' },
     { href: 'hotel.html',       label: 'Convention Hotel' },
     { href: 'leadership.html',  label: 'Convention Leadership' },
