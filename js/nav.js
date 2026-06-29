@@ -11,6 +11,7 @@
     { href: 'submissions.html', label: 'Call for Submissions' },
     { href: 'hotel.html',       label: 'Convention Hotel' },
     { href: 'leadership.html',  label: 'Convention Leadership' },
+    { href: 'sponsorship.html', label: 'Sponsorship' },
   ];
 
   var page = window.location.pathname.split('/').pop() || 'index.html';

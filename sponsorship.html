@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsorship – NAAMA 2026 Convention | Partnership & Advertising</title>
+  <meta name="description" content="Become a sponsor of the NAAMA 48th National Medical Convention, September 4–6, 2026 in Houston, Texas. Diamond, Sapphire, Gold, and Silver sponsorship levels and advertising opportunities available." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aa4793.github.io/naama-convention-2026/sponsorship.html" />
+  <link rel="icon" type="image/png" href="images/naama-favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aa4793.github.io/naama-convention-2026/sponsorship.html" />
+  <meta property="og:title" content="Sponsorship – NAAMA 2026 Convention" />
+  <meta property="og:description" content="Partner with the NAAMA 48th National Medical Convention. Diamond, Sapphire, Gold, and Silver sponsorship levels available." />
+  <meta property="og:image" content="https://aa4793.github.io/naama-convention-2026/images/houston-hero.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sponsorship – NAAMA 2026 Convention" />
+  <meta name="twitter:description" content="Partner with the NAAMA 48th National Medical Convention. Diamond, Sapphire, Gold, and Silver sponsorship levels available." />
+  <meta name="twitter:image" content="https://aa4793.github.io/naama-convention-2026/images/houston-hero.jpg" />
+
+  <link rel="stylesheet" href="css/naama-site.css" />
+  <style>
+    /* ── Sponsorship page styles ── */
+
+    .sponsor-intro {
+      max-width: 760px;
+      margin: 0 auto 1rem;
+      text-align: center;
+      color: var(--gray);
+      font-size: .95rem;
+      line-height: 1.7;
+    }
+
+    /* Tier cards */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 980px) { .tier-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .tier-grid { grid-template-columns: 1fr; } }
+
+    .tier-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border-top: 5px solid var(--teal);
+    }
+    .tier-card--diamond { border-top-color: #4fb6d4; }
+    .tier-card--sapphire { border-top-color: #2b4f8e; }
+    .tier-card--gold { border-top-color: #c9a227; }
+    .tier-card--silver { border-top-color: #9aa6b2; }
+
+    .tier-card__head {
+      padding: 1.5rem 1.5rem 1.25rem;
+      text-align: center;
+      border-bottom: 1px solid #eaeff5;
+    }
+    .tier-card__name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: .35rem;
+    }
+    .tier-card__price {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .tier-card__level {
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: .65rem;
+    }
+
+    .tier-card__list {
+      list-style: none;
+      padding: 1.4rem 1.5rem;
+      margin: 0;
+      flex: 1;
+    }
+    .tier-card__list li {
+      position: relative;
+      padding-left: 1.5rem;
+      font-size: .8rem;
+      color: var(--gray);
+      line-height: 1.5;
+      margin-bottom: .7rem;
+    }
+    .tier-card__list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .42em;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+    .tier-card--diamond .tier-card__list li::before { background: #4fb6d4; }
+    .tier-card--sapphire .tier-card__list li::before { background: #2b4f8e; }
+    .tier-card--gold .tier-card__list li::before { background: #c9a227; }
+    .tier-card--silver .tier-card__list li::before { background: #9aa6b2; }
+    .tier-card__list li strong { color: var(--navy); font-weight: 700; }
+
+    /* Comparison table */
+    .compare-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .compare-table th, .compare-table td {
+      padding: .85rem 1rem;
+      text-align: center;
+      font-size: .82rem;
+      border-bottom: 1px solid #eef2f7;
+    }
+    .compare-table thead th {
+      background: var(--navy);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+    .compare-table thead th:first-child { text-align: left; }
+    .compare-table tbody td:first-child {
+      text-align: left;
+      color: var(--navy);
+      font-weight: 600;
+    }
+    .compare-table tbody tr:nth-child(even) td { background: var(--light); }
+    .compare-table .check { color: var(--teal); font-weight: 800; }
+    .compare-table .price-row td {
+      font-weight: 800;
+      color: var(--navy);
+      font-size: .92rem;
+      background: #eef4fb !important;
+    }
+
+    /* Ad options */
+    .ad-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .ad-grid { grid-template-columns: 1fr; } }
+    .ad-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      border-top: 4px solid var(--steel);
+    }
+    .ad-card__name { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
+    .ad-card__price { font-size: 1.6rem; font-weight: 800; color: var(--navy); margin-bottom: .5rem; }
+    .ad-card__size { font-size: .78rem; color: var(--gray); }
+
+    .spec-box {
+      max-width: 760px;
+      margin: 2rem auto 0;
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+    }
+    .spec-box h4 { color: var(--navy); margin-bottom: 1rem; font-size: .95rem; }
+    .spec-box ul { list-style: none; padding: 0; margin: 0; }
+    .spec-box li { font-size: .82rem; color: var(--gray); padding: .35rem 0; line-height: 1.5; }
+    .spec-box li strong { color: var(--navy); }
+
+    /* How to sponsor */
+    .sponsor-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .sponsor-steps { grid-template-columns: 1fr; } }
+    .step-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.5rem;
+    }
+    .step-card__num {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: .9rem;
+      margin-bottom: .9rem;
+    }
+    .step-card__title { font-size: .95rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
+    .step-card__body { font-size: .82rem; color: var(--gray); line-height: 1.6; }
+    .step-card__body a { color: var(--teal); text-decoration: none; font-weight: 600; }
+
+    .deadline-callout {
+      max-width: 760px;
+      margin: 2.5rem auto 0;
+      background: var(--navy);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    .deadline-callout strong { color: var(--teal); }
+  </style>
+</head>
+<body>
+
+  <script src="js/nav.js"></script>
+
+  <!-- ── Page Hero ── -->
+  <div class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('images/houston-hero.jpg');background-position:center 45%;"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <h1>Sponsorship</h1>
+      <p>Partner with NAAMA to put Arab American health front and center at the 48th National Medical Convention &mdash; September 4&ndash;6, 2026, Houston, Texas.</p>
+    </div>
+  </div>
+
+  <!-- ── About / Intro ── -->
+  <section>
+    <div class="container">
+      <div class="section-header" style="margin-bottom:1.25rem;">
+        <h2>Become a Partner</h2>
+        <div class="divider"></div>
+      </div>
+      <p class="sponsor-intro">
+        The National Arab American Medical Association is a leading non-profit organization advancing the medical and
+        educational interests of Arab American healthcare professionals &mdash; a network of more than <strong>6,000 physicians</strong>
+        and over <strong>50 NAAMA NextGen chapters</strong> nationwide. The 48th National Medical Convention, held in collaboration
+        with Baylor College of Medicine, brings together physicians, researchers, healthcare leaders, and trainees from across
+        the country. Your sponsorship places your organization at the center of that conversation.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Sponsorship Levels ── -->
+  <section style="background:var(--light);padding:4rem 0;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:.5rem;">
+        <h2>Sponsorship Levels</h2>
+        <div class="divider"></div>
+        <p style="color:var(--gray);font-size:.92rem;max-width:560px;margin:0 auto;">Four levels of partnership, each with escalating recognition and convention benefits.</p>
+      </div>
+
+      <div class="tier-grid">
+
+        <!-- Diamond -->
+        <div class="tier-card tier-card--diamond">
+          <div class="tier-card__head">
+            <div class="tier-card__level">Level I</div>
+            <div class="tier-card__name">Diamond</div>
+            <div class="tier-card__price">$20,000</div>
+          </div>
+          <ul class="tier-card__list">
+            <li>Acknowledgment in press releases, logo on event website, and recognition in promotional materials</li>
+            <li>Prominent logo display on all event promotional materials</li>
+            <li>Name recognition in program book and convention proceedings report distributed worldwide</li>
+            <li>Recognition at the Gala Dinner</li>
+            <li><strong>VIP exhibit space</strong> during scientific program</li>
+            <li>Ten full convention registrations</li>
+            <li>Ten gala tickets &amp; VIP gala seating</li>
+            <li>Ten Tarab Night tickets</li>
+            <li>Ten reception tickets</li>
+          </ul>
+        </div>
+
+        <!-- Sapphire -->
+        <div class="tier-card tier-card--sapphire">
+          <div class="tier-card__head">
+            <div class="tier-card__level">Level II</div>
+            <div class="tier-card__name">Sapphire</div>
+            <div class="tier-card__price">$10,000</div>
+          </div>
+          <ul class="tier-card__list">
+            <li>Acknowledgment in press releases, logo on event website, and recognition in all promotional materials</li>
+            <li>Prominent logo display on all event promotional materials</li>
+            <li>Name recognition in program book and proceedings report distributed to all participants</li>
+            <li>Recognition at the Gala Dinner</li>
+            <li><strong>Prominent exhibit space</strong> during scientific program</li>
+            <li>Five full convention registrations</li>
+            <li>Five gala tickets &amp; preferred gala seating</li>
+            <li>Five Tarab Night tickets</li>
+            <li>Five reception tickets</li>
+          </ul>
+        </div>
+
+        <!-- Gold -->
+        <div class="tier-card tier-card--gold">
+          <div class="tier-card__head">
+            <div class="tier-card__level">Level III</div>
+            <div class="tier-card__name">Gold</div>
+            <div class="tier-card__price">$5,000</div>
+          </div>
+          <ul class="tier-card__list">
+            <li>Acknowledgment in press materials, logo on event website, and recognition in all promotional materials</li>
+            <li>Prominent logo display on all event promotional materials</li>
+            <li>Name recognition in program book and proceedings report distributed to all participants</li>
+            <li><strong>Exhibit space</strong> included during scientific program</li>
+            <li>Two full convention registrations</li>
+            <li>Two gala tickets &amp; standard gala seating</li>
+            <li>Two Tarab Night tickets</li>
+            <li>Two reception tickets</li>
+          </ul>
+        </div>
+
+        <!-- Silver -->
+        <div class="tier-card tier-card--silver">
+          <div class="tier-card__head">
+            <div class="tier-card__level">Level IV</div>
+            <div class="tier-card__name">Silver</div>
+            <div class="tier-card__price">$2,500</div>
+          </div>
+          <ul class="tier-card__list">
+            <li>Acknowledgment in press materials, logo placement, and listing on the event website</li>
+            <li>Recognition in promotional materials distributed to all participants</li>
+            <li>Name recognition in program book and proceedings report</li>
+            <li>Promotional opportunities in all print collateral</li>
+            <li><strong>One exhibit table</strong> during scientific program</li>
+            <li>Two full convention registrations</li>
+            <li>Two Tarab Night tickets</li>
+            <li>Two reception tickets</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Benefits Comparison ── -->
+  <section>
+    <div class="container">
+      <div class="section-header" style="margin-bottom:.5rem;">
+        <h2>Benefits at a Glance</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="compare-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Sponsorship Benefit</th>
+              <th>Diamond</th>
+              <th>Sapphire</th>
+              <th>Gold</th>
+              <th>Silver</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="price-row">
+              <td>Contribution</td>
+              <td>$20,000</td>
+              <td>$10,000</td>
+              <td>$5,000</td>
+              <td>$2,500</td>
+            </tr>
+            <tr>
+              <td>Acknowledgment in press releases &amp; logo on website</td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Logo display on promotional materials</td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Name recognition in program book</td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Recognition at the Gala Dinner</td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Exhibit space</td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+              <td><span class="check">&#10004;</span></td>
+            </tr>
+            <tr>
+              <td>Ad in convention book</td>
+              <td>Full page</td>
+              <td>&frac12; page</td>
+              <td>&frac14; page</td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <td>Convention registrations</td>
+              <td>10</td>
+              <td>5</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Gala tickets</td>
+              <td>10</td>
+              <td>5</td>
+              <td>2</td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <td>Tarab Night tickets</td>
+              <td>10</td>
+              <td>5</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Reception tickets</td>
+              <td>10</td>
+              <td>5</td>
+              <td>2</td>
+              <td>&mdash;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Advertising ── -->
+  <section style="background:var(--light);padding:4rem 0;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:.5rem;">
+        <h2>Advertising Opportunities</h2>
+        <div class="divider"></div>
+        <p style="color:var(--gray);font-size:.92rem;max-width:560px;margin:0 auto;">Place an advertisement in the convention booklet. <em>(The convention booklet differs from the gala booklet.)</em></p>
+      </div>
+
+      <div class="ad-grid">
+        <div class="ad-card">
+          <div class="ad-card__name">Full-Page Advertisement</div>
+          <div class="ad-card__price">$1,500</div>
+          <div class="ad-card__size">8&Prime; W &times; 9&Prime; H</div>
+        </div>
+        <div class="ad-card">
+          <div class="ad-card__name">Half-Page Advertisement</div>
+          <div class="ad-card__price">$1,000</div>
+          <div class="ad-card__size">Horizontal: 7.75&Prime; W &times; 4.75&Prime; H<br>Vertical: 3.75&Prime; W &times; 9.75&Prime; H</div>
+        </div>
+        <div class="ad-card">
+          <div class="ad-card__name">Quarter-Page Advertisement</div>
+          <div class="ad-card__price">$500</div>
+          <div class="ad-card__size">3.625&Prime; W &times; 4.75&Prime; H</div>
+        </div>
+      </div>
+
+      <div class="spec-box">
+        <h4>Ad Specifications</h4>
+        <ul>
+          <li><strong>Color:</strong> Colored or black &amp; white</li>
+          <li><strong>Image resolution:</strong> 300 dpi</li>
+          <li><strong>Accepted files:</strong> PDF, JPG</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How to Sponsor ── -->
+  <section>
+    <div class="container">
+      <div class="section-header" style="margin-bottom:.5rem;">
+        <h2>How to Become a Sponsor</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="sponsor-steps">
+        <div class="step-card">
+          <div class="step-card__num">1</div>
+          <div class="step-card__title">Choose Your Level</div>
+          <div class="step-card__body">Select a sponsorship level &mdash; Diamond, Sapphire, Gold, or Silver &mdash; or an advertising package that fits your goals.</div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">2</div>
+          <div class="step-card__title">Select Payment</div>
+          <div class="step-card__body">Pay by check (payable to NAAMA), credit card, or bank wire. Email <a href="mailto:naama@naama.com">naama@naama.com</a> for wire instructions.</div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">3</div>
+          <div class="step-card__title">Complete the Agreement</div>
+          <div class="step-card__body">Submit the signed Written Agreement for Commercial Support along with your logo and advertising materials.</div>
+        </div>
+      </div>
+
+      <div class="deadline-callout">
+        Signed agreement, full payment, ads, and logos must be received by <strong>August 1, 2026</strong>.
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="mailto:naama@naama.com?subject=NAAMA%2048th%20Convention%20Sponsorship" class="btn btn-primary">Contact Us to Sponsor</a>
+      </div>
+
+      <p style="text-align:center;color:var(--gray);font-size:.8rem;max-width:640px;margin:2rem auto 0;line-height:1.6;">
+        NAAMA is a 501(c)(3) tax-exempt organization (Tax ID #38-2911504). All sponsorships comply with NAAMA policies and
+        the ACCME Standards for Commercial Support. For questions, call <a href="tel:2486463661" style="color:var(--teal);text-decoration:none;">(248) 646-3661</a>
+        or email <a href="mailto:naama@naama.com" style="color:var(--teal);text-decoration:none;">naama@naama.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/New2025-WH-NAAMA-Full-logo-corrected-500x188-1.png" alt="NAAMA Logo" />
+          <p>National Arab American Medical Association<br>2265 Livernois Road, Suite 720<br>Troy, MI 48083 USA</p>
+        </div>
+        <div class="footer__col">
+          <h4>Convention</h4>
+          <a href="index.html">Home</a>
+          <a href="agenda.html">Program</a>
+          <a href="tours.html">Tours &amp; Events</a>
+          <a href="submissions.html">Call for Submissions</a>
+          <a href="hotel.html">Convention Hotel</a>
+          <a href="leadership.html">Convention Leadership</a>
+          <a href="sponsorship.html">Sponsorship</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="tel:2486463661">(248) 646-3661</a>
+          <a href="mailto:naama@naama.com">naama@naama.com</a>
+          <a href="https://www.naama.com" target="_blank" rel="noopener">www.naama.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 NAAMA. All rights reserved.</span>
+        <span>48th National Medical Convention &middot; Houston, Texas</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
